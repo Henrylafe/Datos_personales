@@ -3,38 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <title>Contacto</title>
-    <style>
-        body {
-          background-color: #ccc;
-        }
-        </style>
+
+    <style type="text/css">
+      .tipog {
+          font-family: Helvetica, Arial, sans-serif;
+      }
+      body {
+        background-color: #b2cddd;
+        margin: 20px;
+      }
+  </style>
+  
+ 
 </head>
 <body>
+  <Table class="tipog" width="100%" height="50px" style=background-color:#012941;>
+    <tr>
+    <td style="color:rgb(255, 255, 255);">
+      &nbsp; &nbsp; <strong><a style="color:rgb(255, 255, 255);" href="Index.html" title="Inicio">Inicio</a> &nbsp; |
+      &nbsp; <a style="color:rgb(255, 255, 255);" href="Hobbies.html" title="Inicio">Hobbies</a> &nbsp; |
+      &nbsp; <a style="color:rgb(255, 255, 255);" href="datos_contacto.html" title="Inicio">Datos Personales</a></strong>
+    </td>
+  </tr>
+</Table>
+<br>
+
+
      <h2>Datos de Contacto</h2>
+     <hr size="3px">
      <p>Nombre: José Enrique Lara</p>
      <p>Teléfono: <a href="tel: +34654028746" title="">654 028 746</a></p>
      <p>E-mail:  <a href="mailto:joselara5@gmail.com" title="">joselara5@gmail.com</a></p>
-    <br>
-    <hr size="3px">
-     <h2>Enviar Mensaje</h2>
-     <form>
-        <form action="mailto:joselara5@gmail.com" method="post" enctype="text/plain"></form>
-
-        <label> Nombre:</label><br>
-        <input type="text" name="name" required><br><br>
-
-        <label> Apellidos:</label><br>
-        <input type="text" name="subname" required><br><br>
-
-        <label>Correo electrónico:</label><br>
-        <input type="email" name="email" required><br><br>
-
-        <label> Mensaje:</label><br>
-        <textarea rows="4" cols="50"></textarea><br><br>
+    <br><br>
     
-        <input type="submit"/>
-        <input type="reset"/>
-       </form>
+     <h2>Enviar Mensaje</h2>
+     <hr size="3px">
+     
+      
+        
+    <form>
+      <table>
+        <tr>
+          <td width="31%">
+            <label><h3>Tus datos</h3></label>
+            <form action="mailto:joselara5@gmail.com" method="post" enctype="text/plain"></form>
+            <label> Nombre:</label><br>
+            <input type="text" name="name" required>
+            <br><br>
+            <label>Correo electrónico:</label><br>
+            <input type="email" name="email" required>
+            <br><br>
+            <label> Mensaje:</label><br>
+            <textarea rows="4" cols="30"></textarea>
+            <br><br>
+          </td>
+          
+          <td width="23%">
+            <label><h3>¿Ya eres cliente?</h3></label>
+            <input type="radio" id="si" name="si" value="si">
+            <label for="si">Si</label><br>
+            <input type="radio" id="No" name="no" value="no">
+            <label for="css">No</label>
+            <br><br><br><br><br><br><br><br><br><br><br>
+          </td>
+        
+          <td width="23%">
+            <label><h3>¿Qué servicio desea?</h3></label>
+            <input type="checkbox" id="Web" name="web" value="web">
+            <label for="vehicle1"> Paginas Web</label><br>
+            <input type="checkbox" id="logos" name="logos" value="logos">
+            <label for="vehicle2"> Creación de Logotipo</label><br>
+            <input type="checkbox" id="fotografia" name="fotografia" value="fotografia">
+            <label for="vehicle3"> Fotografía</label>
+            <br><br><br><br><br><br><br><br><br><br>
+          </td>
 
-    </body>
+         <td width="23%"> 
+            <label for="preguntas"><h3>¿Sobre qué desea preguntar?</h3></label>
+            <select id="preguntas" name="preguntas" size="4" multiple>
+              <option value="presupuesto">Presupuesto</option>
+              <option value="tiempo">Tiempo de entrega</option>
+              <option value="impresion">Impresión</option>
+              <option value="otros">Otras Cuestiones</option>
+            </select>
+            <br><br><br><br><br><br><br><br><br>
+          </td>
+        </tr>
+    </table>
+
+    <hr>
+        <input type="submit" value="Submit">
+        <input type="reset">
+  </form>     
+    
+</body>
 </html>
