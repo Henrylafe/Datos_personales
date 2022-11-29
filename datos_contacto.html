@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <style>
+        body {
+          background-color: #ccc;
+        }
+        </style>
+</head>
+<body>
+     <h2>Datos de Contacto</h2>
+     <p>Nombre: José Enrique Lara</p>
+     <p>Teléfono: <a href="tel: +34654028746" title="">654 028 746</a></p>
+     <p>E-mail:  <a href="mailto:joselara5@gmail.com" title="">joselara5@gmail.com</a></p>
+    <br>
+    <hr size="3px">
+     <h2>Enviar Mensaje</h2>
+     <form>
+        <form action="mailto:joselara5@gmail.com" method="post" enctype="text/plain"></form>
+
+        <label> Nombre:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label> Apellidos:</label><br>
+        <input type="text" name="subname" required><br><br>
+
+        <label>Correo electrónico:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label> Mensaje:</label><br>
+        <textarea rows="4" cols="50"></textarea><br><br>
+    
+        <input type="submit"/>
+        <input type="reset"/>
+       </form>
+
+    </body>
+</html>
